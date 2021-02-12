@@ -9,10 +9,14 @@ Se o tamanho da string for menor que 3, não altere nada.
 
 Retorne o resultado da string.
 """
-
 def verbing(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    verbo = s
+    if len(verbo) >= 3:
+        if verbo[-3:] == 'ing':
+            verbo = ''.join([verbo, 'ly'])
+        else:
+            verbo = ''.join([verbo, 'ing'])
+    return verbo
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
