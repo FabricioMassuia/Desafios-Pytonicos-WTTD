@@ -17,7 +17,7 @@ def front_back(a, b):
         b) % 2 == 0 else ((len(b) // 2) + 1):]
 
     return ''.join([''.join([strA1, strB1]), ''.join([strA2, strB2])])
-    
+
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
